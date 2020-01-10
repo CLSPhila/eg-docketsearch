@@ -1,0 +1,7 @@
+.vscode
+.git
+*.sqlite3
+Readme.md
+*.pyc
+.env
+.gitignore
