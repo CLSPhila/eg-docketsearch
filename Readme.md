@@ -17,7 +17,7 @@ The project requires a few environment varialbles.
 
 ```
 SECRET_KEY=abc1234
-
+ALLOWED_HOST=localhost
 # for building docker images
 
 REPOSITORY=myrepo
