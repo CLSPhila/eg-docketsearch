@@ -3,10 +3,16 @@ version: '3'
 services:
   api: 
     build: .
-    command: bash -c "gunicorn egdocketsearch.wsgi:application --bind 0.0.0.0:8000 --workers 4"
+    command: bash -c "python manage.py migrate && gunicorn --bind 0.0.0.0:8000 --workers 4 egdocketsearch.wsgi:application"
     volumes:
       - .:/code
+      - data:/data/
     ports:
       - "8000:8000"
     environment:
       SECRET_KEY: "${SECRET_KEY}"
+      DEBUG: "TRUE"
+      DB: "/data/"
+ 
+volumes:
+    data: 
