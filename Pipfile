@@ -15,7 +15,7 @@ pyyaml = "==5.2"
 [packages]
 lxml = "==4.4.1"
 requests = "==2.22.0"
-django = "==2.2.8"
+django = "==2.2.10"
 djangorestframework = "==3.10.3"
 django-cors-headers = "==3.2.0"
 django-docketsearch = {git = "https://github.com/clsphila/django-docketsearch.git",editable = true,ref = "738aedba7dab8689b3ea94db447e7e628954b4fb"}
