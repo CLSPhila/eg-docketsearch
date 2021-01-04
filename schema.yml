@@ -1,0 +1,96 @@
+openapi: 3.0.2
+info:
+  title: UJS Search Service for the Expungement Generator
+  version: ''
+paths:
+  /ujs/search/name/:
+    get:
+      operationId: listNameSearchs
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    first_name:
+                      type: string
+                    last_name:
+                      type: string
+                    dob:
+                      type: string
+                      format: date
+                    court:
+                      type: string
+                      pattern: ^(?:CP|MDJ|both)$
+                  required:
+                  - first_name
+                  - last_name
+          description: ''
+    post:
+      operationId: CreateNameSearch
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                first_name:
+                  type: string
+                last_name:
+                  type: string
+                dob:
+                  type: string
+                  format: date
+                court:
+                  type: string
+                  pattern: ^(?:CP|MDJ|both)$
+              required:
+              - first_name
+              - last_name
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  first_name:
+                    type: string
+                  last_name:
+                    type: string
+                  dob:
+                    type: string
+                    format: date
+                  court:
+                    type: string
+                    pattern: ^(?:CP|MDJ|both)$
+                required:
+                - first_name
+                - last_name
+          description: ''
+  /ujs/search/docket/:
+    post:
+      operationId: CreateDocketSearch
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                docket_number:
+                  type: string
+              required:
+              - docket_number
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  docket_number:
+                    type: string
+                required:
+                - docket_number
+          description: ''
