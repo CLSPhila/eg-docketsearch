@@ -18,9 +18,11 @@ requests = "==2.22.0"
 django = "==2.2.13"
 djangorestframework = "==3.10.3"
 django-cors-headers = "==3.2.0"
-django-docketsearch = {git = "https://github.com/clsphila/django-docketsearch.git",editable = true,ref = "fadb081f4d87ca818c1bcc73ce626632c8ea0667"}
+django-docketsearch = {git = "https://github.com/clsphila/django-docketsearch.git",editable = true,ref = "7831c7e7d6d2123d7e42ae682c40690a943d64f6"}
 gunicorn = "==20.0.4"
 aiohttp = "==4.0.0a1"
+brotli = "*"
+brotlipy = "*"
 
 [requires]
 python_version = "3.7"
