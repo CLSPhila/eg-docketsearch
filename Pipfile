@@ -10,7 +10,7 @@ black = "==19.10b0"
 pytest-django = "==3.7.0"
 pytest-pythonpath = "==0.7.3"
 uritemplate = "==3.0.0"
-pyyaml = "==5.2"
+pyyaml = "==5.4"
 
 [packages]
 lxml = "==4.4.1"
