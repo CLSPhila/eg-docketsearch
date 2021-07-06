@@ -16,7 +16,7 @@ pyyaml = "==5.4"
 lxml = "==4.6.3"
 requests = "==2.22.0"
 django = "==2.2.24"
-djangorestframework = "==3.10.3"
+djangorestframework = "==3.11.2"
 django-cors-headers = "==3.2.0"
 django-docketsearch = {git = "https://github.com/clsphila/django-docketsearch.git",editable = true,ref = "7831c7e7d6d2123d7e42ae682c40690a943d64f6"}
 gunicorn = "==20.0.4"
