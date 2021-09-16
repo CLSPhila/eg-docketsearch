@@ -9,7 +9,7 @@ endif
 
 .PHONY : build
 build :
-	docker build -f Dockerfile --tag ${REPOSITORY}/${IMAGENAME}:${TAG} https://github.com/CLSPhila/eg-docketsearch.git
+	docker build -f Dockerfile --tag ${REPOSITORY}/${IMAGENAME}:${TAG} https://github.com/CLSPhila/eg-docketsearch.git#main
 
 
 .PHONY : push
