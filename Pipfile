@@ -13,7 +13,7 @@ uritemplate = "==3.0.0"
 pyyaml = "==5.4"
 
 [packages]
-lxml = "==4.6.3"
+lxml = "==4.9.1"
 requests = "==2.22.0"
 django = "==2.2.24"
 djangorestframework = "==3.11.2"
