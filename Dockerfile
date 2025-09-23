@@ -1,6 +1,6 @@
 FROM python:3.7.6-stretch
 
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONUNBUFFERED=1
 
 RUN mkdir /code
 
